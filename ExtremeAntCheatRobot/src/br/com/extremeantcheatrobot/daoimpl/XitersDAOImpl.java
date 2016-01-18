@@ -27,7 +27,7 @@ public class XitersDAOImpl implements XitersDAO {
 	private static final String SQL_SELECT_COUNT_PLAYER_ON = "select count(id) as players from player_on where ativo = true";
 	private static final String SQL_SELECT_ULTIMA_VERSAO = "select id,ultima_versao,nova_versao,descricao_versao from versao_sistema_type_service";
 	private static final String SQL_SELECT_JOGADOR_WARFACE = "select nome,email,nick,codigoAntXiter,foto from jogador_warface where codigoAntXiter = ?";
-	private static final String SQL_SELECT_COMANDOS_BY_TROM = "select comando from comando_antxiter_trom where usuario_id = ?";
+	//private static final String SQL_SELECT_COMANDOS_BY_TROM = "select comando from comando_antxiter_trom where usuario_id = ?";
 	private static final String SQL_INSERT_RETORNO_COMANDO = "insert into return_comandos(dados,tipo,usuario_id)values(?,?,?);  ";
 	private static final String SQL_SELECT_AUTENTICAR = "select u.id,u.nome,u.email,u.nick,u.sexo,sp.remetente,sp.id as liga_id,sp.numero_chaves as chaves_liga from usuario u"
 			+ " left join serial_player sp on (sp.id = u.serial_player_id)"
